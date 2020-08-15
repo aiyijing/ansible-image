@@ -22,7 +22,9 @@ docker pull aiyijing/ansible:latest
 
 ```dockerfile
 FROM aiyijing/ansible:latest
+
 RUN apk --no-cache add unzip
+
 CMD ["bash","-c","unzip"]
 ```
 

@@ -1,5 +1,7 @@
 FROM python:alpine3.12
 
+USER root
+
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories & apk update & \
     apk --no-cache add gcc musl-dev python3-dev libffi-dev openssl-dev sshpass openssh-client
 

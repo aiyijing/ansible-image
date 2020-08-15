@@ -1,5 +1,7 @@
 FROM python:alpine3.12
 
+USER root
+
 RUN apk update & \
     apk --no-cache add gcc musl-dev python3-dev libffi-dev openssl-dev sshpass openssh-client
 
