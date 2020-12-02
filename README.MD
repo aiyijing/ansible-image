@@ -39,3 +39,4 @@ docker build -f Dockerfile.cn  . -t aiyijing/ansible:latest
 ```bash
 docker build . -t aiyijing/ansible:latest
 ```
+
